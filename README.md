@@ -14,3 +14,11 @@
 ## POO
 - [Anotaciones](Anotaciones/03-POO.md)
 - [Codigo](Basics/src/poo)
+
+## Lambdas
+- [Anotaciones](Anotaciones/04-Lambdas.md)
+- [Codigo](Basics/src/lamdas)
+
+## Streams
+- [Anotaciones](Anotaciones/05-Streams.md)
+- [Codigo](Basics/src/streams)

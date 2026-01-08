@@ -99,3 +99,8 @@ Para ejecutar el programa:
 ```bash
 java RestApiCall <API_KEY_FOOTBALL> <API_KEY_ASSEMBLYAI>
 ```
+**Recursos:**
+
+- **Audio de ejemplo:** [fuente](https://www.youtube.com/watch?v=uCEKIBECWkk)
+- **API-FOOTBALL:** [enlace](https://www.api-football.com/)
+- **AssemblyAI:** [enlace](https://assemblyai.com/)

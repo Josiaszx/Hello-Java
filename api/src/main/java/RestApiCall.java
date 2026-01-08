@@ -12,14 +12,19 @@ import static java.net.http.HttpClient.newHttpClient;
 
 public class RestApiCall {
 
+    // los valores de las api keys se pasan como argumentos al programa
     public static void main(String[] args) throws Exception{
 
         // libreria de google para convertir json a objetos java y viceversa
         Gson gson = new Gson();
 
-        // GET request
+        /*
+            -- GET request --
+            Para implementar la peticion GET utilizo el api de API-FOOTBALL, que ofrece una cantidad de solicitudes
+            gratuitas por dia.
+            enlace: https://www.api-football.com/
+        */
 
-        // en este caso paso la API KEY como argumento del programa
         final String APIFOOTBALL_API_KEY = args[0];
 
 
@@ -51,13 +56,18 @@ public class RestApiCall {
 
 
 
-        // POST request
+        /*
+            -- POST request --
+            Para implementar la peticion POST utilizo el api de AssemblyAI, que ofrece una cantidad de solicitudes
+            gratuitas de prueba en su plan gratis.
+            enlace: https://assemblyai.com/
+        */
 
         final String ASSEMBLYAI_API_KEY = args[1];
 
         // crear representacion del body de la request como objeto
         RequestBody requestBody = new RequestBody();
-        requestBody.setAudio_url("https://github.com/johnmarty3/JavaAPITutorial/blob/main/Thirsty.mp4");
+        requestBody.setAudio_url("https://github.com/Josiaszx/Hello-Java/raw/refs/heads/main/api/audio.mp3");
 
         // crear JSON a partir del objeto
         String jsonBody = gson.toJson(requestBody);
